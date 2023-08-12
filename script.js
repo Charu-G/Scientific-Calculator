@@ -1,6 +1,7 @@
 let display=document.getElementById('display');
 let result;
 let sign;
+let sig;
 let sym;
 let base;
 
@@ -12,12 +13,12 @@ function disp(exp){
 
 function dispr(expr){
     display.value=expr+display.value;
-    sign=expr;
+    sig=expr;
 }
 
 function dispp(expp){
     // console.log(e)
-    display.value+=exp;
+    display.value+=expp;
     sym=expp;
     let item1=display.value;
     let item2=item1.replace("^(","");
@@ -29,10 +30,10 @@ function equal(){
         if(sign == '!'){
             fact();
         } 
-        else if(sign == '\u221A'){
+        else if(sig == '\u221A'){
             sqrt();
         }
-        else if(sign == '\u221B'){
+        else if(sig == '\u221B'){
             cbrt();
         }
         else if(sym == '^\u0028'){
@@ -41,19 +42,19 @@ function equal(){
         else if(sign == '%'){
             percent();
         }
-        else if(sign == 'log\u0028'){
+        else if(sig == 'log\u0028'){
             log();
         }
-        else if(sign == 'ln\u0028'){
+        else if(sig == 'ln\u0028'){
             ln();
         }
-        else if(sign == 'sin\u0028'){
+        else if(sig == 'sin\u0028'){
             sin();
         }
-        else if(sign == 'cos\u0028'){
+        else if(sig == 'cos\u0028'){
             cos();
         }
-        else if(sign == 'tan\u0028'){
+        else if(sig == 'tan\u0028'){
             tan();
         }
         display.value=eval(display.value);
