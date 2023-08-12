@@ -1,0 +1,71 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    margin: 4.7em;
+}
+
+.container{
+    background-color: gold;
+    height:560px;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    padding:10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 15px;
+}
+
+#display{
+    font-size: 32px;
+    height: 55px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border: none;
+    text-align: right;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    padding-right:10px;
+}
+
+#display:focus{
+    outline: none;
+}
+
+.btn{
+    padding:1em .5em;
+}
+
+.row{
+    display:flex;
+    justify-content: space-around;
+}
+
+button{
+    width:4em;
+    height:2em;
+    margin:7px;
+    font-size: x-large;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.normal{
+    margin-bottom: 20px;
+}
+
+#del, #ac{
+    background-color:  rgb(255, 0, 0);
+}
+
+#equal{
+    background-color: rgb(50, 49, 49);
+    color:white;
+}

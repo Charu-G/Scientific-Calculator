@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="favi.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div>
+                <input id="display" type="text" placeholder="0">
+            </div>
+            <div class="btn">
+                <div class="row">
+                    <button onclick="disp('!')" >!</button>
+                    <button onclick="dispr('\u221A')" >&#8730</button>
+                    <button onclick="dispr('\u221B')" >&#8731</button>
+                    <button onclick="sqr()" >x<sup>2</sup></button>
+                    <button onclick="dispp('^\u0028')" >^</button>
+                    
+                </div>
+                <div class="row">
+                    <button onclick="inv()" >x<sup>-1</sup></button>
+                    <button onclick="disp('%')" >%</button>
+                    <button onclick="disp('&#40')" >&#40</button>
+                    <button onclick="disp('&#41')" >&#41</button>
+                    <button onclick="disp('2.718281828459')" >e</button>
+                </div>
+                <div class="row normal">
+                    <button onclick="dispr('log\u0028')" >log</button>
+                    <button onclick="dispr('ln\u0028')" >ln</button>
+                    <button onclick="dispr('sin\u0028')" >sin</button>
+                    <button onclick="dispr('cos\u0028')" >cos</button>
+                    <button onclick="dispr('tan\u0028')" >tan</button>
+                </div>
+                <div class="row">
+                    <button onclick="disp('7')" >7</button>
+                    <button onclick="disp('8')" >8</button>
+                    <button onclick="disp('9')" >9</button>
+                    <button onclick="del()" id="del">DEL</button>
+                    <button onclick="ac()" id="ac">AC</button>
+                </div>
+                <div class="row">
+                    <button onclick="disp('4')" >4</button>
+                    <button onclick="disp('5')" >5</button>
+                    <button onclick="disp('6')" >6</button>
+                    <button onclick="disp('*')" >x</button>
+                    <button onclick="disp('\u002F')" >&#247;</button>
+                </div>
+                <div class="row">
+                    <button onclick="disp('1')" >1</button>
+                    <button onclick="disp('2')" >2</button>
+                    <button onclick="disp('3')" >3</button>
+                    <button onclick="disp('+')" >+</button>
+                    <button onclick="disp('-')" >-</button>
+                </div>
+                <div class="row">
+                    <button onclick="disp('0')" >0</button>
+                    <button onclick="disp('.')" >.</button>
+                    <button onclick="disp(Math.PI)" >&#960;</button>
+                    <button onclick="ans()">Ans</button>
+                    <button onclick="equal()"  id="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script rel="javascript" src="script.js"></script>
+</html>
